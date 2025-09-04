@@ -85,5 +85,14 @@ This version is similar to **Community Ansible 6**, but with certified content a
 
 1. Install `ansible-navigator`:
    ```bash
-   sudo dnf install ansible-navigator
-   ansible-navigator --version
+   $ sudo dnf install ansible-navigator
+   $ ansible-navigator --version
+   $ podman login registry.redhat.io
+Username: your-registry-username
+Password: your-registry-password
+Login Succeeded!
+
+   $ podman pull registry.redhat.io/ansible-automation-platform-22/ee-supported-rhel8:latest
+
+   $ ansible-navigator images
+   ```
